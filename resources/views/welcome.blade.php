@@ -34,7 +34,7 @@
                             <div class="Video col-lg-12 col-md-12" style="padding: 0;">
                                 <div style="height: 100%;" class="video-box">
                                     <video width="100%" height="100%" controls loop>
-                                        <source src="assets/img/video1.mp4" type="video/mp4" />
+                                        <source src="{{asset('assets/img/video1.mp4')}}" type="video/mp4" />
                                     </video>
                                 </div>
                             </div>
