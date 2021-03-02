@@ -13,10 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/Home');
 });
 
+Route::get('/Home','App\Http\Controllers\HomeController@index')->name('pages.home');
+Route::post('/send_data','App\Http\Controllers\HomeController@store');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
